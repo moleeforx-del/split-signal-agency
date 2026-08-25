@@ -30,9 +30,6 @@ h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.07em; }
 .round-link:hover { background: #fff; color: var(--red); transform: rotate(45deg); }
 .edge-note { position: absolute; top: 50%; right: 1.5vw; writing-mode: vertical-rl; transform: translateY(-50%); font: 500 .58rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; display: flex; gap: .9rem; align-items: center; }
 
-.proof { background: var(--paper); color: var(--ink); padding: 2.5rem 4.5vw 3rem; border-bottom: 1px solid #bbb8af; }
-.proof > p { font: 500 .63rem var(--font-mono); text-transform: uppercase; letter-spacing: .12em; margin: 0 0 2rem; color: #6b6962; }
-.logos { display: flex; justify-content: space-between; align-items: center; gap: 2rem; font-size: clamp(.95rem, 1.8vw, 1.5rem); font-weight: 720; }
 /* Browser zoom creates an enormous virtual viewport. At those sizes, keep the
    hero as a finite canvas so the page reads as a complete composition instead
    of stretching the first section across the whole screen. */
@@ -45,7 +42,6 @@ h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.07em; }
   .eyebrow { margin-bottom: 24px; }
   .hero-bottom { margin-top: 44px; padding-left: 562px; }
   .edge-note { right: 22px; }
-  .proof { padding-inline: 64px; }
 }
 
 @media (max-width: 760px) {
@@ -59,8 +55,6 @@ h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.07em; }
   .intro { max-width: 18rem; font-size: .98rem; }
   .round-link { width: 58px; height: 58px; }
   .edge-note { display: none; }
-  .proof { padding: 2rem 1.25rem; overflow: hidden; }
-  .logos { width: max-content; gap: 2.4rem; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

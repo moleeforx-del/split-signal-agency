@@ -12,7 +12,6 @@ export default function Home() {
             SPLIT<span>/</span>SIGNAL
           </a>
           <div className="nav-links">
-            <a href="#work">Work</a>
             <a href="#studio">Studio</a>
           </div>
           <a className="nav-cta" href="mailto:hello@splitsignal.agency">
@@ -28,20 +27,13 @@ export default function Home() {
               Strategy, identity, and digital experiences for ambitious teams
               ready to become impossible to ignore.
             </p>
-            <a className="round-link" href="#work" aria-label="Explore selected work">
+            <a className="round-link" href="mailto:hello@splitsignal.agency" aria-label="Start a project">
               <Arrow />
             </a>
           </div>
         </div>
 
         <div className="edge-note">Scroll to see the shift <span>↓</span></div>
-      </section>
-
-      <section className="proof" id="work">
-        <p>Trusted by teams building what’s next</p>
-        <div className="logos" aria-label="Selected clients">
-          <span>ARC'TERYX</span><span>NOTION</span><span>VANS</span><span>airbnb</span><span>SONOS</span>
-        </div>
       </section>
 
     </main>
