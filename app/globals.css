@@ -38,6 +38,17 @@ h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.07em; }
 .manifesto h2 { margin: 0; font-size: clamp(3rem, 7vw, 7rem); line-height: .9; letter-spacing: -.07em; font-weight: 700; }
 .manifesto > p:last-child { grid-column: 2; max-width: 34rem; font-size: 1.2rem; line-height: 1.5; margin: 4rem 0 0; }
 
+/* Browser zoom creates an enormous virtual viewport. At those sizes, keep the
+   hero as a finite canvas so the page reads as a complete composition instead
+   of stretching the first section across the whole screen. */
+@media (min-width: 3000px) {
+  .hero { min-height: 0; height: min(1100px, 32vw); }
+  .hero-copy { bottom: 64px; }
+  .eyebrow { margin-bottom: 24px; }
+  .hero-bottom { margin-top: 44px; }
+  .manifesto { min-height: 900px; }
+}
+
 @media (max-width: 760px) {
   .nav { height: 72px; grid-template-columns: 1fr auto; padding: 0 1.25rem; }
   .nav-links { display: none; }
