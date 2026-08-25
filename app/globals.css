@@ -42,11 +42,16 @@ h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.07em; }
    hero as a finite canvas so the page reads as a complete composition instead
    of stretching the first section across the whole screen. */
 @media (min-width: 3000px) {
+  body { background: var(--paper); }
+  main { width: 1440px; margin: 96px auto 0; }
   .hero { min-height: 0; height: min(1100px, 32vw); }
-  .hero-copy { bottom: 64px; }
+  .nav { padding-inline: 64px; }
+  .hero-copy { left: 64px; right: 64px; bottom: 64px; }
   .eyebrow { margin-bottom: 24px; }
-  .hero-bottom { margin-top: 44px; }
-  .manifesto { min-height: 900px; }
+  .hero-bottom { margin-top: 44px; padding-left: 562px; }
+  .edge-note { right: 22px; }
+  .proof { padding-inline: 64px; }
+  .manifesto { min-height: 900px; padding-inline: 64px; }
 }
 
 @media (max-width: 760px) {
