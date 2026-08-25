@@ -13,7 +13,6 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#work">Work</a>
-            <a href="#approach">Approach</a>
             <a href="#studio">Studio</a>
           </div>
           <a className="nav-cta" href="mailto:hello@splitsignal.agency">
@@ -45,11 +44,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="manifesto" id="approach">
-        <p className="section-label">Built for momentum</p>
-        <h2>We find the signal.<br />Then we turn it up.</h2>
-        <p>From first thought to final frame, we help brands move with clarity, character, and cultural force.</p>
-      </section>
     </main>
   );
 }
